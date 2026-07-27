@@ -1,4 +1,4 @@
-/* 诗词详情页渲染：正文（含组诗）、配图、自序、女儿心语、前后导航、主题换肤 */
+/* 诗词详情页渲染：正文（含组诗）、配图、自言自语、田田说、前后导航、主题换肤 */
 (function () {
   document.getElementById("nav-site").textContent = SITE.title;
   document.getElementById("site-footer-text").textContent = SITE.footer;
@@ -54,7 +54,7 @@
 
   // 父亲自序（放正文前）
   if (p.note) {
-    html += '<aside class="poem-note"><span class="note-label">自序</span><div class="note-body">' + paras(p.note) + '</div></aside>';
+    html += '<aside class="poem-note"><span class="note-label">自言自语</span><div class="note-body">' + paras(p.note) + '</div></aside>';
   }
 
   // 正文（单首或组诗）；组诗加 poem-body--group 以连贯通排
@@ -77,14 +77,23 @@
     if (sub.note) {
       html += '<div class="poem-subnote">' + paras(sub.note) + '</div>';
     }
+    if (sub.review) {
+      html += '<div class="poem-review">'
+        + '<div class="review-head">'
+        + '<svg class="review-logo" viewBox="0 0 40 40" aria-hidden="true"><rect x="2" y="2" width="36" height="36" rx="7" fill="currentColor"/><text x="20" y="28" text-anchor="middle" font-family="Kaiti SC, STKaiti, serif" font-size="22" fill="#f6f1e4">评</text></svg>'
+        + '<span class="review-author">' + sub.review.author + '评诗</span>'
+        + '</div>'
+        + '<div class="review-text">' + paras(sub.review.text) + '</div>'
+        + '</div>';
+    }
     html += '</section>';
   });
   html += '</article>';
 
-  // 女儿心语（原“女儿点评”，避用“评”字）
+  // 田田说（女儿点评）
   if (p.comment) {
     html += '<aside class="poem-comment">'
-      + '<div class="comment-head"><span class="comment-seal">语</span><span class="comment-title">女儿心语</span></div>'
+      + '<div class="comment-head"><span class="comment-seal">语</span><span class="comment-title">田田说</span></div>'
       + '<div class="comment-body">' + paras(p.comment) + '</div>'
       + '</aside>';
   }
