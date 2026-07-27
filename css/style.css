@@ -12,7 +12,7 @@
   --accent: #9e3c2d;         /* 默认朱砂 */
   --accent-soft: rgba(158, 60, 45, .08);
   --border: #d8cdb4;
-  --serif: "Microsoft YaHei", "微软雅黑", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei UI", sans-serif;
+  --serif: "LXGW WenKai", "Kaiti SC", "STKaiti", "微软雅黑", "PingFang SC", "Hiragino Sans GB", "Heiti SC", sans-serif; /* 正文：霞鹜文楷（楷体）优先 */
   --brush: "Liu Jian Mao Cao", "Ma Shan Zheng", cursive; /* 主页“玖言堂”三字：刘建毛草 */
   --msz: "Ma Shan Zheng", cursive; /* 诗词页大标题：马善政毛笔楷书 */
   --kai: "LXGW WenKai", "Kaiti SC", "STKaiti", "楷体", "KaiTi", serif; /* 楷体：网络字体霞鹜文楷，本机有楷体则回退 */
@@ -38,7 +38,7 @@ body {
     radial-gradient(circle at 15% 20%, rgba(255,255,255,.5), transparent 45%),
     radial-gradient(circle at 85% 80%, rgba(214,200,168,.35), transparent 50%),
     repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(160,140,100,.02) 3px, rgba(160,140,100,.02) 4px);
-  line-height: 1.72;
+  line-height: 1.4;
   letter-spacing: .04em;
 }
 
@@ -234,7 +234,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 .poem-section + .poem-section {
-  margin-top: 34px;
+  margin-top: 22px;
   padding-top: 30px;
   border-top: 1px dashed var(--border);
 }
@@ -276,13 +276,13 @@ a { color: inherit; text-decoration: none; }
 .poem-lines { text-align: center; }
 .poem-lines p {
   font-size: 21px;
-  line-height: 1.95;
+  line-height: 1.48;
   letter-spacing: .08em;
 }
 
 /* 自序/自注 */
 .poem-note {
-  margin: 0 0 26px;
+  margin: 0 0 16px;
   padding: 16px 18px;
   background: var(--accent-soft);
   border-left: 3px solid var(--accent);
@@ -306,7 +306,7 @@ a { color: inherit; text-decoration: none; }
   text-align: right;
   color: var(--ink-light);
   font-size: 13.5px;
-  margin-top: 14px;
+  margin-top: 12px;
   padding-right: 8px;
 }
 .poem-subnote {
@@ -315,14 +315,14 @@ a { color: inherit; text-decoration: none; }
   border-top: 1px dashed var(--border);
   font-size: 13.5px;
   color: var(--ink-light);
-  line-height: 1.7;
+  line-height: 1.4;
   font-style: italic;
 }
 .poem-subnote p + p { margin-top: 6px; }
 
 /* 他人评诗（如杨雪波老师评诗）：古朴加粗 + 印章logo */
 .poem-review {
-  margin-top: 14px;
+  margin-top: 12px;
   padding: 14px 16px 14px 18px;
   border: 1px solid var(--accent);
   border-left: 4px solid var(--accent);
@@ -342,14 +342,14 @@ a { color: inherit; text-decoration: none; }
   font-family: var(--kai);
   font-weight: 700;
   font-size: 15px;
-  line-height: 1.9;
+  line-height: 1.48;
   color: var(--ink);
 }
 .poem-review .review-text p + p { margin-top: 6px; }
 
 /* 女儿心语（原“女儿点评”，避用“评”字） */
 .poem-comment {
-  margin-top: 30px;
+  margin-top: 20px;
   border: 1px solid var(--border);
   outline: 3px double var(--border);
   outline-offset: 4px;
@@ -369,7 +369,7 @@ a { color: inherit; text-decoration: none; }
 }
 .comment-title { font-family: var(--child); font-size: 15px; letter-spacing: .12em; color: var(--accent); }
 .comment-body { font-family: var(--child); }
-.comment-body p { font-size: 15.5px; line-height: 1.85; }
+.comment-body p { font-size: 15.5px; line-height: 1.48; }
 .comment-body p + p { margin-top: 10px; }
 
 /* 前后导航 */
