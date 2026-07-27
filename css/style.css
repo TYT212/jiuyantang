@@ -1,0 +1,371 @@
+/* ============================================================
+ * 松风诗草 · 古风样式
+ * 字体规则：仅“玖言堂”三字用毛笔体（--brush），其余一律微软雅黑（--serif）
+ * 主题换肤：body 或列表项挂 theme-xxx 类，改变强调色
+ * ============================================================ */
+
+:root {
+  --paper: #f6f1e4;          /* 宣纸底 */
+  --paper-deep: #efe7d3;
+  --ink: #3a3226;            /* 墨色文字 */
+  --ink-light: #8a7d66;
+  --accent: #9e3c2d;         /* 默认朱砂 */
+  --accent-soft: rgba(158, 60, 45, .08);
+  --border: #d8cdb4;
+  --serif: "Microsoft YaHei", "微软雅黑", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei UI", sans-serif;
+  --brush: "Ma Shan Zheng", "Kaiti SC", "STKaiti", cursive; /* 仅用于“玖言堂”三字 */
+}
+
+/* 各主题强调色 */
+.theme-spring { --accent: #4a7c46; --accent-soft: rgba(74,124,70,.08); }
+.theme-summer { --accent: #2e6e8e; --accent-soft: rgba(46,110,142,.08); }
+.theme-autumn { --accent: #b3641f; --accent-soft: rgba(179,100,31,.08); }
+.theme-winter { --accent: #4f5d75; --accent-soft: rgba(79,93,117,.08); }
+.theme-ink    { --accent: #3a3226; --accent-soft: rgba(58,50,38,.07); }
+.theme-plum   { --accent: #a34057; --accent-soft: rgba(163,64,87,.08); }
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: var(--serif);
+  color: var(--ink);
+  background-color: var(--paper);
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(255,255,255,.5), transparent 45%),
+    radial-gradient(circle at 85% 80%, rgba(214,200,168,.35), transparent 50%),
+    repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(160,140,100,.02) 3px, rgba(160,140,100,.02) 4px);
+  line-height: 1.9;
+  letter-spacing: .04em;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* ---------- 首页：题名区 ---------- */
+.hero { padding: 72px 20px 40px; display: flex; justify-content: center; }
+
+.hero-frame {
+  position: relative;
+  max-width: 640px;
+  width: 100%;
+  text-align: center;
+  padding: 48px 32px 40px;
+  border: 1px solid var(--border);
+  outline: 4px double var(--border);
+  outline-offset: 6px;
+  background: rgba(255,255,255,.35);
+}
+
+.hero-seal {
+  position: absolute;
+  top: -22px; right: 24px;
+  width: 46px; height: 46px;
+  background: var(--accent);
+  color: #f6f1e4;
+  font-family: var(--brush);
+  font-size: 26px;
+  line-height: 46px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.2);
+  transform: rotate(4deg);
+}
+
+.hero-title {
+  font-family: var(--brush);
+  font-size: clamp(44px, 8vw, 68px);
+  font-weight: 400;
+  color: var(--ink);
+  letter-spacing: .12em;
+}
+
+.hero-subtitle {
+  margin-top: 6px;
+  color: var(--ink-light);
+  font-size: 15px;
+  letter-spacing: .3em;
+}
+
+.hero-divider {
+  margin: 22px auto;
+  display: flex; align-items: center; gap: 14px;
+  color: var(--accent);
+  max-width: 300px;
+}
+.hero-divider::before, .hero-divider::after {
+  content: ""; flex: 1; height: 1px; background: var(--border);
+}
+
+.hero-intro p {
+  font-size: 15.5px;
+  color: var(--ink);
+  opacity: .85;
+}
+
+/* ---------- 首页：目录 ---------- */
+.catalog { max-width: 720px; margin: 0 auto; padding: 40px 20px 60px; }
+
+.catalog-heading {
+  text-align: center;
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: .3em;
+  margin-bottom: 4px;
+}
+.heading-deco {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--paper);
+  font-size: 16px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  vertical-align: middle;
+  margin-right: 14px;
+  letter-spacing: 0;
+}
+
+.catalog-tip {
+  text-align: center;
+  color: var(--ink-light);
+  font-size: 13px;
+  margin-bottom: 36px;
+}
+
+.poem-list { list-style: none; }
+
+.poem-item { border-bottom: 1px dashed var(--border); }
+
+.poem-item a {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 10px;
+  transition: background .2s;
+}
+.poem-item a:hover { background: var(--accent-soft); }
+
+.poem-item-title {
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.poem-item a:hover .poem-item-title { color: var(--accent); }
+
+.poem-item-meta {
+  display: flex; align-items: baseline; gap: 10px;
+  font-size: 13px; color: var(--ink-light); white-space: nowrap;
+}
+.poem-item-meta em { font-style: normal; }
+
+.tag {
+  font-size: 11px;
+  padding: 1px 7px;
+  border-radius: 3px;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+/* ---------- 详情页 ---------- */
+.top-nav {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 22px 20px 0;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.back-link { color: var(--ink-light); font-size: 14px; }
+.back-link:hover { color: var(--accent); }
+.nav-site { font-family: var(--brush); font-size: 20px; color: var(--ink-light); }
+
+.poem-page { max-width: 680px; margin: 0 auto; padding: 40px 24px 20px; }
+
+.poem-head { text-align: center; position: relative; margin-bottom: 30px; }
+
+.poem-seal {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--paper);
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 15px;
+  padding: 4px 9px;
+  border-radius: 5px;
+  transform: rotate(-3deg);
+  margin-bottom: 14px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.18);
+}
+
+.poem-title {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: clamp(30px, 6vw, 44px);
+  letter-spacing: .06em;
+}
+
+.poem-meta { color: var(--ink-light); font-size: 14px; margin-top: 6px; }
+.poem-remark { color: var(--ink-light); font-size: 12.5px; margin-top: 4px; letter-spacing: .02em; }
+
+.poem-cover {
+  margin: 26px 0;
+  border: 1px solid var(--border);
+  padding: 8px;
+  background: rgba(255,255,255,.4);
+}
+.poem-cover img { width: 100%; display: block; }
+
+.poem-deco {
+  text-align: center;
+  color: var(--accent);
+  font-size: 20px;
+  margin: 8px 0 20px;
+  opacity: .7;
+}
+.poem-deco::before, .poem-deco::after {
+  content: "———"; color: var(--border); letter-spacing: -2px; margin: 0 12px;
+}
+
+.poem-body {
+  background: rgba(255,255,255,.35);
+  border: 1px solid var(--border);
+  padding: 36px 20px;
+}
+
+.poem-section + .poem-section {
+  margin-top: 34px;
+  padding-top: 30px;
+  border-top: 1px dashed var(--border);
+}
+
+.poem-subtitle {
+  text-align: center;
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 23px;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+/* 组诗页：子诗连贯通排，弱化分隔与小标题，呈“同一篇里的连续组诗” */
+.poem-body--group .poem-section + .poem-section {
+  margin-top: 18px;
+  padding-top: 0;
+  border-top: none;
+}
+.poem-body--group .poem-subtitle {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: .04em;
+  opacity: .82;
+  margin-bottom: 10px;
+}
+.poem-body--group .poem-lines p { font-size: 20px; }
+.sub-genre {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 3px;
+  padding: 0 6px;
+  vertical-align: middle;
+  letter-spacing: .05em;
+  opacity: .85;
+}
+
+.poem-lines { text-align: center; }
+.poem-lines p {
+  font-size: 21px;
+  line-height: 2.3;
+  letter-spacing: .08em;
+}
+
+/* 自序/自注 */
+.poem-note {
+  margin: 0 0 26px;
+  padding: 16px 18px;
+  background: var(--accent-soft);
+  border-left: 3px solid var(--accent);
+  font-size: 14.5px;
+  color: var(--ink);
+  opacity: .9;
+}
+.note-label {
+  font-family: var(--serif);
+  font-weight: 600;
+  color: var(--accent);
+  font-size: 15px;
+  display: block;
+  margin-bottom: 6px;
+}
+.note-body p + p { margin-top: 8px; }
+
+/* 落款与每首题记/附记 */
+.poem-sign {
+  text-align: right;
+  color: var(--ink-light);
+  font-size: 13.5px;
+  margin-top: 14px;
+  padding-right: 8px;
+}
+.poem-subnote {
+  margin-top: 12px;
+  padding: 10px 14px;
+  border-top: 1px dashed var(--border);
+  font-size: 13.5px;
+  color: var(--ink-light);
+  line-height: 1.9;
+}
+.poem-subnote p + p { margin-top: 6px; }
+
+/* 女儿心语（原“女儿点评”，避用“评”字） */
+.poem-comment {
+  margin-top: 30px;
+  border: 1px solid var(--border);
+  outline: 3px double var(--border);
+  outline-offset: 4px;
+  padding: 22px 24px;
+  background: rgba(255,255,255,.45);
+}
+.comment-head { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.comment-seal {
+  background: var(--accent);
+  color: var(--paper);
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 14px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  transform: rotate(3deg);
+}
+.comment-title { font-size: 14px; letter-spacing: .2em; color: var(--ink-light); }
+.comment-body p { font-size: 15.5px; line-height: 2; }
+.comment-body p + p { margin-top: 10px; }
+
+/* 前后导航 */
+.pager {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 24px;
+  display: flex; justify-content: space-between; gap: 20px;
+}
+.pager-link {
+  font-size: 14.5px;
+  color: var(--ink-light);
+  border-bottom: 1px dashed var(--border);
+  padding-bottom: 2px;
+}
+.pager-link:hover { color: var(--accent); border-color: var(--accent); }
+
+/* 页脚 */
+.site-footer {
+  text-align: center;
+  padding: 30px 20px 46px;
+  color: var(--ink-light);
+  font-size: 13px;
+  letter-spacing: .15em;
+}
+
+.empty-tip { text-align: center; color: var(--ink-light); padding: 40px 0; }
+
+/* 移动端 */
+@media (max-width: 520px) {
+  .poem-item a { flex-direction: column; gap: 4px; align-items: flex-start; }
+  .poem-lines p { font-size: 18px; }
+}
