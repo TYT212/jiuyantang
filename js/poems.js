@@ -666,7 +666,9 @@ const POEMS = [
     "isGroup": true,
     "theme": "spring",
     "genre": "组诗",
-    "cover": "images/spring.png",
+    "cover": "images/shimei-villa.png",
+    "coverCaption": "石梅山庄",
+    "coverSource": "图片由 AI 生成",
     "poems": [
       {
         "subtitle": "其一",
