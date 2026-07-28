@@ -258,7 +258,9 @@ const POEMS = [
     "isGroup": true,
     "theme": "plum",
     "genre": "组诗",
-    "cover": "images/plum.png",
+    "cover": "images/wedding-lantern.png",
+    "coverCaption": "红灯笼 · 喜",
+    "coverSource": "图片由 AI 生成",
     "poems": [
       {
         "subtitle": "其一 · 祝酒歌——送给妹妹",
