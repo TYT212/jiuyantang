@@ -792,7 +792,9 @@ const POEMS = [
     "isGroup": true,
     "theme": "spring",
     "genre": "组诗",
-    "cover": "images/spring.png",
+    "cover": "images/retire-leisure.png",
+    "coverCaption": "闲居之乐",
+    "coverSource": "图片由 AI 生成",
     "poems": [
       {
         "subtitle": "其一",
@@ -925,7 +927,9 @@ const POEMS = [
     "isGroup": true,
     "theme": "spring",
     "genre": "组诗",
-    "cover": "images/spring.png",
+    "cover": "images/spring-festival.png",
+    "coverCaption": "除夕守岁",
+    "coverSource": "图片由 AI 生成",
     "poems": [
       {
         "subtitle": "其一 · 2011",
@@ -1029,7 +1033,9 @@ const POEMS = [
     "isGroup": false,
     "theme": "spring",
     "genre": "七言排律",
-    "cover": "images/spring.png",
+    "cover": "images/yunnan-autumn.png",
+    "coverCaption": "云南秋色",
+    "coverSource": "图片由 AI 生成",
     "poems": [
       {
         "subtitle": null,
@@ -1108,10 +1114,12 @@ const POEMS = [
     "isGroup": true,
     "theme": "spring",
     "genre": "组诗",
-    "cover": "images/spring.png",
+    "cover": "images/newborn.png",
+    "coverCaption": "新生之喜",
+    "coverSource": "图片由 AI 生成",
     "poems": [
       {
-        "subtitle": "其一 · 其一 · 十月怀胎",
+        "subtitle": "其一 · 十月怀胎",
         "lines": [
           "穿流九曲九折弯，",
           "泊入三生三世源。",
@@ -1127,7 +1135,7 @@ const POEMS = [
         "genre": "七言律诗"
       },
       {
-        "subtitle": "其二 · 其二 · 欣闻女儿露露（即田田）诞生",
+        "subtitle": "其二 · 欣闻女儿露露（即田田）诞生",
         "lines": [
           "信间初闻婴啼始，",
           "无趣弄墨懒吟诗。",
@@ -1139,7 +1147,7 @@ const POEMS = [
         "genre": "七言绝句"
       },
       {
-        "subtitle": "其三 · 其三 · 小水仙",
+        "subtitle": "其三 · 小水仙",
         "lines": [
           "雷公唤雨京城淹，",
           "天宫天仙飘下凡。",
@@ -1153,7 +1161,7 @@ const POEMS = [
         "genre": "七言诗"
       },
       {
-        "subtitle": "其四 · 其四 · 得孙乐",
+        "subtitle": "其四 · 得孙乐",
         "lines": [
           "金蛇喜暖夏日慢，",
           "桂仔留香秋来晚。",
@@ -1180,7 +1188,9 @@ const POEMS = [
     "isGroup": true,
     "theme": "summer",
     "genre": "组诗",
-    "cover": "images/summer.png",
+    "cover": "images/summer-cool.png",
+    "coverCaption": "夏日清凉",
+    "coverSource": "图片由 AI 生成",
     "poems": [
       {
         "subtitle": "其一 · 大年初三宴请东北老乡作乡愁",
@@ -1290,7 +1300,9 @@ const POEMS = [
     "isGroup": false,
     "theme": "summer",
     "genre": "自由诗",
-    "cover": "images/summer.png",
+    "cover": "images/youth-campus.png",
+    "coverCaption": "青葱岁月",
+    "coverSource": "图片由 AI 生成",
     "poems": [
       {
         "subtitle": "导语",
@@ -1314,10 +1326,12 @@ const POEMS = [
     "isGroup": true,
     "theme": "autumn",
     "genre": "组诗",
-    "cover": "images/autumn.png",
+    "cover": "images/wedding-2.png",
+    "coverCaption": "小侄新婚",
+    "coverSource": "图片由 AI 生成",
     "poems": [
       {
-        "subtitle": "其一 · 其一 · 新婚贺辞",
+        "subtitle": "其一 · 新婚贺辞",
         "lines": [
           "我喜欢山东，山东是孔子故乡，孙子故里，墨子故居，中国文人孵化地。我喜欢山东人，山东人忠诚、好客、侠义，该出手时就出手。我喜欢山东东营人，东营人海纳百川，富得流油，从胜利走向胜利。【注1】",
           "新婚会。",
@@ -1344,7 +1358,7 @@ const POEMS = [
         "genre": "自由诗"
       },
       {
-        "subtitle": "其二 · 其二 · 妹妹田国华贺诗",
+        "subtitle": "其二 · 妹妹田国华贺诗",
         "lines": [
           "眼望思丹囍事到，",
           "从心到口五官笑。",
@@ -1360,7 +1374,7 @@ const POEMS = [
         "genre": "七言律诗"
       },
       {
-        "subtitle": "其三 · 其三 · “克山诗友”龙游墨海和诗",
+        "subtitle": "其三 · “克山诗友”龙游墨海和诗",
         "lines": [
           "枫火妆山韵初秋，",
           "华光溢彩醉红楼。",
@@ -1376,7 +1390,7 @@ const POEMS = [
         "genre": "七言律诗"
       },
       {
-        "subtitle": "其四 · 其四 · “克山诗友”潇洒怪叟和诗",
+        "subtitle": "其四 · “克山诗友”潇洒怪叟和诗",
         "lines": [
           "（一）",
           "并蒂莲花有缘开，",
@@ -1398,7 +1412,7 @@ const POEMS = [
         "genre": "七言排律"
       },
       {
-        "subtitle": "其五 · 其五 · “克山诗友”书法帅哥和诗",
+        "subtitle": "其五 · “克山诗友”书法帅哥和诗",
         "lines": [
           "男俊女搂脖，",
           "鸳鸯恋热窝。",
@@ -1410,7 +1424,7 @@ const POEMS = [
         "genre": "五言绝句"
       },
       {
-        "subtitle": "其六 · 其六 · “克山诗友”巍巍和诗",
+        "subtitle": "其六 · “克山诗友”巍巍和诗",
         "lines": [
           "悉闻贵子结良缘，",
           "衷心祝福网上传。",
@@ -1434,7 +1448,9 @@ const POEMS = [
     "isGroup": true,
     "theme": "winter",
     "genre": "组诗",
-    "cover": "images/winter.png",
+    "cover": "images/uk-country.png",
+    "coverCaption": "英伦行",
+    "coverSource": "图片由 AI 生成",
     "poems": [
       {
         "subtitle": "其一 · 向远方",
@@ -1587,7 +1603,7 @@ const POEMS = [
         "genre": "七言绝句"
       },
       {
-        "subtitle": "其13 · 即景即兴",
+        "subtitle": "其十三 · 即景即兴",
         "lines": [
           "皇家马会举国庆，",
           "贵妇红妆欲岀行。",
@@ -1610,7 +1626,9 @@ const POEMS = [
     "isGroup": false,
     "theme": "winter",
     "genre": "七言律诗",
-    "cover": "images/winter.png",
+    "cover": "images/memorial.png",
+    "coverCaption": "缅怀老领导",
+    "coverSource": "图片由 AI 生成",
     "poems": [
       {
         "subtitle": null,
@@ -1638,7 +1656,9 @@ const POEMS = [
     "isGroup": false,
     "theme": "spring",
     "genre": "七言律诗",
-    "cover": "images/spring.png",
+    "cover": "images/nurse.png",
+    "coverCaption": "白衣天使",
+    "coverSource": "图片由 AI 生成",
     "poems": [
       {
         "subtitle": null,
@@ -1672,7 +1692,9 @@ const POEMS = [
     "isGroup": false,
     "theme": "ink",
     "genre": "七言律诗",
-    "cover": "images/ink.png",
+    "cover": "images/old-eyes.png",
+    "coverCaption": "老眼",
+    "coverSource": "图片由 AI 生成",
     "poems": [
       {
         "subtitle": null,
@@ -1702,7 +1724,9 @@ const POEMS = [
     "isGroup": false,
     "theme": "spring",
     "genre": "七言律诗",
-    "cover": "images/spring.png",
+    "cover": "images/old-hair.png",
+    "coverCaption": "老毛",
+    "coverSource": "图片由 AI 生成",
     "poems": [
       {
         "subtitle": "田渴新诗词",
@@ -1735,10 +1759,12 @@ const POEMS = [
     "isGroup": true,
     "theme": "spring",
     "genre": "组诗",
-    "cover": "images/spring.png",
+    "cover": "images/old-walk.png",
+    "coverCaption": "老腿",
+    "coverSource": "图片由 AI 生成",
     "poems": [
       {
-        "subtitle": "其一 · 其一 · 老腿",
+        "subtitle": "其一 · 老腿",
         "lines": [
           "上山容易下山难，",
           "老腿先觉老迈艰。",
@@ -1754,7 +1780,7 @@ const POEMS = [
         "genre": "七言律诗"
       },
       {
-        "subtitle": "其二 · 其二 · 附旧诗作《劝走歌·醒来，有如诞生》",
+        "subtitle": "其二 · 附旧诗作《劝走歌·醒来，有如诞生》",
         "lines": [
           "从躺着",
           "到坐着、走着、跑着",
@@ -1786,7 +1812,9 @@ const POEMS = [
     "isGroup": false,
     "theme": "spring",
     "genre": "七言绝句",
-    "cover": "images/spring.png",
+    "cover": "images/cooking.png",
+    "coverCaption": "为孙煮饭",
+    "coverSource": "图片由 AI 生成",
     "poems": [
       {
         "subtitle": null,
@@ -1811,7 +1839,9 @@ const POEMS = [
     "isGroup": false,
     "theme": "summer",
     "genre": "七言诗",
-    "cover": "images/summer.png",
+    "cover": "images/old-face.png",
+    "coverCaption": "老脸",
+    "coverSource": "图片由 AI 生成",
     "poems": [
       {
         "subtitle": "诗词",
@@ -1844,7 +1874,9 @@ const POEMS = [
     "isGroup": false,
     "theme": "summer",
     "genre": "七言绝句",
-    "cover": "images/summer.png",
+    "cover": "images/pension.png",
+    "coverCaption": "养老金",
+    "coverSource": "图片由 AI 生成",
     "poems": [
       {
         "subtitle": null,
