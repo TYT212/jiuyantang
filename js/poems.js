@@ -98,7 +98,9 @@ const POEMS = [
     "isGroup": true,
     "theme": "spring",
     "genre": "组诗",
-    "cover": "images/spring.png",
+    "cover": "images/rainbow-spring.png",
+    "coverCaption": "彩虹温泉",
+    "coverSource": "图片由 AI 生成",
     "poems": [
       {
         "subtitle": "其一 · 时间",
