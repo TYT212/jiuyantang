@@ -42,7 +42,15 @@
 
   // 配图（无图则显示水墨留白装饰）
   if (p.cover) {
-    html += '<figure class="poem-cover"><img src="' + p.cover + '" alt="' + p.title + ' 配图"></figure>';
+    html += '<figure class="poem-cover">';
+    html += '<img src="' + p.cover + '" alt="' + p.title + ' 配图">';
+    if (p.coverCaption) {
+      html += '<figcaption class="cover-cap">' + p.coverCaption + '</figcaption>';
+    }
+    if (p.coverSource) {
+      html += '<div class="cover-source">' + p.coverSource + '</div>';
+    }
+    html += '</figure>';
   } else {
     html += '<div class="poem-deco" aria-hidden="true"><span>❋</span></div>';
   }
